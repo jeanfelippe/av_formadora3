@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="avf_3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <title>Avaliação Formadora 2</title>
+</head>
+<body>
+    <div class="container">
+        <div id="logo">
+            <img src="img/logo.png" width="300" alt="">
+        </div>
+        <form class="formContent">
+            <div class="info">
+                <h1>Cadastre-se</h1>
+                <!-- <h2>Informações Pessoais</h2> -->
+                <div>
+                    <p>Nome</p>
+                    <input type="text" class="texto" placeholder="Digite seu nome completo" minlength="10">
+                </div>
+                <div>
+                    <p>Idade</p>
+                    <input type="text" class="texto" placeholder="Digite sua idade" >
+                </div>
+                <div>
+                    <p>Endereço</p>
+                    <input type="text" class="texto" placeholder="Digite seu endereço" required>
+                </div>
+
+                <div>
+                    <p>Login</p>
+                    <input type="text" class="texto" placeholder="Digite seu login" minlength="5" maxlength="5">
+                </div>
+
+                <div>
+                    <p>Senha</p>
+                    <input type="password" class="texto" placeholder="Senha" required>
+                </div>
+                <div>
+                    <p>Confirme sua senha</p>
+                    <input type="password" class="texto" placeholder="Repita a senha" required>
+                </div>
+
+
+
+                <!-- <h2>Contato</h2>
+                <div>
+                    <p>Telefone</p>
+                    <input type="text" class="texto" maxlength="11" required pattern="[0-9]{11}" placeholder="Seu telefone" />
+                </div>
+                <div>
+                    <p>Endereço </p>
+                    <input type="text" class="texto" required placeholder="Seu endereço">
+                </div>
+                <div>
+                    <p>Cidade </p>
+                    <input type="text" class="texto" required placeholder="Sua cidade">
+                </div>
+                <div>
+                    <p>Estado </p>
+                    <input type="text" class="texto" required placeholder="Seu estado">
+                </div>
+                <div>
+                    <p>CEP</p> -->
+
+                    <!-- <input type="password" class="confirmPass" required> -->
+
+                    <!-- <input name="CEP" class="texto" required pattern= "\d{5}-?\d{3}" placeholder="Seu CEP"/>
+                </div>
+                <h2>Interesses Acadêmicos</h2>
+                <div>
+                    <h3>Curso de Interesse</h3>
+                        <div class="cursos">
+                                <div>
+                                    <input type="radio" name="curso" class="curso" value="adm">
+                                    <span style="margin-left: 5px;">Administração</span>
+                                </div>
+                                <div>
+                                    <input type="radio" name="curso" value="ads">
+                                    <span style="margin-left: 5px;">Análise e Desenvolvimento de Sistemas</span>
+                                </div>
+                                <div>
+                                    <input type="radio" class="curso" name="curso" value="direito">
+                                    <span style="margin-left: 5px;">Direito</span>
+                                </div>
+                                <div>
+                                    <input type="radio" class="curso" name="curso" value="enf">
+                                    <span style="margin-left: 5px;">Enfermagem</span>
+                                </div>
+                                <div>
+                                    <input type="radio" class="curso" name="curso" value="gastro">
+                                    <span style="margin-left: 5px;">Gastronomia</span>
+                                </div>
+                                <div>
+                                    <input type="radio" class="curso" name="curso" value="psico">
+                                    <span style="margin-left: 5px;">Psicologia</span>
+                                </div>
+                            <h3>Semestre de Ingresso</h3>
+
+                                <select name="semIngresso">
+                                    <option>1º Semestre</option>
+                                    <option>2º Semestre</option>
+                                    <option>3º Semestre</option>
+                                    <option>4º Semestre</option>
+                                    <option>5º Semestre</option>
+                                    <option>6º Semestre</option>
+                                    <option>7º Semestre</option>
+                                    <option>8º Semestre</option>
+                                </select>
+                        </div>
+        
+                        <div class="expProfissional">
+                            <h2>Experiência Profissional</h2>
+                            <div>
+                                <p>Nome da Empresa</p>
+                                <input type="text" class="texto" required placeholder="Nome da Empresa">
+                            </div>
+                            <div>
+                                <p>Cargo</p>
+                                <input type="text" class="texto" required placeholder="Nome do Cargo">
+                            </div>
+                            <div class="dataCargo">
+                                <p>Data de Início:</p>
+                                <input type="date" class="data_inicio" required placeholder="Data de início">
+
+                                <p>Data de Término:</p>
+                                <input type="date" class="data_fim" required placeholder="Data de término">
+                            </div>
+                        </div>
+                        <div class="comentarios">
+                            <h2>Comentários</h2>
+                            <textarea id="comentario" name="comentario" rows="3" cols="35">
+                            </textarea>
+        
+                        </div>
+        
+                </div>
+            </div> -->
+            <div id="butao">
+                    <input type="submit" class="butao" value="Enviar">
+                <input type="reset"  class="butao" value="Limpar">
+            </div>
+            <p class="copyright">© Feito por Roberta Fernandes.</p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
