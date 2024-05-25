@@ -28,13 +28,15 @@
             const senha = document.querySelector('input[name=senha]');
             const confirma= document.querySelector('input[name=confirma]');
 
-            if(nome.value!='' && idade.value!=''){
-                //alert("Preencha todos os dados!");
-                window.location.href="http://www.google.com";
+            // if(nome.value!='' && idade.value!=''){
+            //     alert("Preencha todos os dados!");
+            //     return false;                
+            //     // window.location.href="http://www.google.com";
+            //     //sou redirecionado para a proxima pagina porém nao valida os campos do form
                 
-            }else{
-                //window.location.href="wwww.google.pt";
-            }
+            // }else{
+            //     window.location.href="http://www.google.com";
+            // }
         }
 
         // function senhaOK(){
@@ -56,7 +58,7 @@
                 <!-- <h2>Informações Pessoais</h2> -->
                 <div>
                     <p>Nome</p>
-                    <input type="text" class="texto" name="nome" placeholder="Digite seu nome completo" minlength="10" onchange='confereCadastro();'>
+                    <input type="text" class="texto" name="nome" placeholder="Digite seu nome completo" minlength="10" required onchange='confereCadastro();'>
                 </div>
                 <div>
                     <p>Idade</p>
