@@ -8,7 +8,9 @@
     <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
     <title>Avaliação Formadora 2</title>
 
+    
     <script>
+        
         function confereSenha(){
             const senha = document.querySelector('input[name=senha]');
             const confirma= document.querySelector('input[name=confirma]');
@@ -20,30 +22,15 @@
             }
         }
 
-        function confereCadastro(){
-            const nome = document.querySelector('input[name=nome]');
-            const idade = document.querySelector('input[name=idade]');
-            const endereco = document.querySelector('input[name=endereco]');
-            const login = document.querySelector('input[name=login]');
-            const senha = document.querySelector('input[name=senha]');
-            const confirma= document.querySelector('input[name=confirma]');
+        
 
-            // if(nome.value!='' && idade.value!=''){
-            //     alert("Preencha todos os dados!");
-            //     return false;                
-            //     // window.location.href="http://www.google.com";
-            //     //sou redirecionado para a proxima pagina porém nao valida os campos do form
-                
-            // }else{
-            //     window.location.href="http://www.google.com";
-            // }
-        }
 
-        // function senhaOK(){
-        //     alert("Senhas Conferem!")
-        // }
+
+
 
     </script>
+
+    
 
 </head>
 <body>
@@ -52,36 +39,36 @@
             <img src="img/logo.png" width="300" alt="">
         </div>
 
-        <form class="formContent"  onsubmit="confereCadastro();">
+        <form class="formContent" id="form" action="http://www.google.com.br" >
             <div class="info">
                 <h1>Cadastre-se</h1>
                 <!-- <h2>Informações Pessoais</h2> -->
                 <div>
                     <p>Nome</p>
-                    <input type="text" class="texto" name="nome" placeholder="Digite seu nome completo" minlength="10" required onchange='confereCadastro();'>
+                    <input type="text" class="texto" name="nome" id="nome" placeholder="Digite seu nome completo" minlength="10">
                 </div>
                 <div>
                     <p>Idade</p>
-                    <input type="text" class="texto" name="idade" placeholder="Digite sua idade" onchange='confereCadastro();'>
+                    <input type="text" class="texto" name="idade" id="idade" placeholder="Digite sua idade" >
                 </div>
                 <div>
                     <p>Endereço</p>
-                    <input type="text" class="texto" name="endereco" placeholder="Digite seu endereço" onchange='confereCadastro();'>
+                    <input type="text" class="texto" name="endereco" id="endereco" placeholder="Digite seu endereço" >
                 </div>
 
                 <div>
                     <p>Login</p>
-                    <input type="text" class="texto" name="login" placeholder="Digite seu login" minlength="5" maxlength="5" onchange='confereCadastro();'>
+                    <input type="text" class="texto" name="login"  id="login" placeholder="Digite seu login" minlength="5" maxlength="5" >
                 </div>
 
                 <div>
                     <p>Senha</p>
-                    <input type="password" class="texto" id="senha1" name="senha" placeholder="Senha" minlength="8" maxlength="8" onchange='confereSenha();' onchange='confereCadastro();'>
+                    <input type="password" class="texto" id="senha1" name="senha" placeholder="Senha" minlength="8" maxlength="8" onchange='confereSenha();'>
                 </div>
 
                 <div>
                     <p>Confirme sua senha</p>
-                    <input type="password" class="texto" id="senha2" name="confirma" placeholder="Repita a senha" minlength="8" maxlength="8" onchange='confereSenha();' onchange='confereCadastro();'>
+                    <input type="password" class="texto" id="senha2" name="confirma" placeholder="Repita a senha" minlength="8" maxlength="8" onchange='confereSenha();' >
                 </div>
 
             <div id="butao">
@@ -90,6 +77,8 @@
             </div>
             <p class="copyright">© Feito por Roberta Fernandes.</p>
         </form>
+
+        <script src="script.js"></script>
     </div>
 
 </body>
